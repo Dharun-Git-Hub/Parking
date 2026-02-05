@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Layout/Header';
-import { useAuth } from "../../context/Authcontext";
 import { api } from "../../service/api";
 
 export default function AdminDashboard() {
     const navigate = useNavigate();
-    const { user } = useAuth();
+    const { user } = api.getCurrentUser();
     const [stats, setStats] = useState(null);
     const [loading, setLoading] = useState(true);
 

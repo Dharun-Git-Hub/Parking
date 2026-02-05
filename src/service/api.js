@@ -1,5 +1,4 @@
-// src/service/api.js
-// Helper to simulate delay
+// import { AuthProvider } from "./context/AuthContext";// Helper to simulate delay
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 
