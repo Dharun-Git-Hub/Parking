@@ -9,7 +9,7 @@ import ParkingSlots from './components/ParkingMap/ParkingSlots'
 import AdminDashboard from './components/Admin/AdminDashboard'
 import MyBookings from './components/Booking/MyBookings'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import { AuthProvider, useAuth } from './context/AuthContext'
+import { AuthProvider, useAuth } from './context/Authcontext'
 
 
 function ProtectedRoute({ children, role }) {
